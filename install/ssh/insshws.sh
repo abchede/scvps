@@ -4,7 +4,7 @@
 # Link Hosting Kalian
 url="https://raw.githubusercontent.com/abchede/scvps/main/install"
 
-wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/abchede/scvps/main/sshws/ws-dropbear
+wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/abchede/scvps/main/install/ssh/ws-dropbear
 chmod +x /usr/local/bin/ws-dropbear
 
 # Installing Service
@@ -32,7 +32,7 @@ systemctl enable ws-dropbear.service
 systemctl start ws-dropbear.service
 systemctl restart ws-dropbear.service
 
-wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/abchede/scvps/main/sshws/ws-ovpn.py
+wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/abchede/scvps/main/install/ssh/ws-ovpn.py
 chmod +x /usr/local/bin/ws-ovpn
 
 # Installing Service
@@ -59,7 +59,7 @@ systemctl daemon-reload
 systemctl enable ws-ovpn
 systemctl restart ws-ovpn
 
-wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/abchede/scvps/main/sshws/ws-stunnel
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/abchede/scvps/main/install/ssh/ws-stunnel
 chmod +x /usr/local/bin/ws-stunnel
 
 # Installing Service
